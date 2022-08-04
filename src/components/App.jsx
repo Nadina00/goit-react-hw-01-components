@@ -9,16 +9,7 @@ import transactions from 'components/TransactionHistory/transactions.json'
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'block',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
+    <div>
       <Profile
       username={user.username}
       tag={user.tag}
@@ -27,7 +18,7 @@ export const App = () => {
       stats={user.stats} />
 
       
-     <Statistics title="Upload stats" 
+<Statistics title="Upload stats" stats={data}  
      key={data.id}
     label = {data.label}
     percentage = {data.percentage}/>
